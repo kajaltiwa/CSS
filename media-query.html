@@ -1,0 +1,133 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            gap: 5px;
+        }
+
+        .box {
+            background-color: cadetblue;
+            color: aliceblue;
+            display: grid;
+            place-items: center;
+        }
+
+        #box1,
+        #box14 {
+            grid-column: 1/6 span;
+        }
+
+        @media only screen and (min-width:1080px) and (max-width:1920px) {
+            .main {
+                height: 150vh;
+                grid-template-columns: auto auto auto auto;
+            }
+
+            .box {
+                background-color: rgb(26, 233, 43);
+
+            }
+
+            #box1,
+            #box14 {
+                grid-column: 1/4 span;
+            }
+        }
+
+        @media only screen and (min-width:768px) and (max-width:1079px) {
+            .main {
+                height: 200vh;
+                grid-template-columns: auto auto auto;
+            }
+            .box {
+                background-color: rgb(233, 26, 71);
+
+            }
+            #box1,#box14 {
+                grid-column: 1/3 span;
+            }
+        }
+        
+        @media only screen and (min-width:480px) and (max-width:767px) {
+            .main {
+                height: 300vh;
+                grid-template-columns: auto auto ;
+            }
+
+            .box {
+                background-color: rgb(213, 163, 25);
+
+            }
+
+            #box1,
+            #box14 {
+                grid-column: 1/2 span;
+            }
+        }
+        @media only screen and (min-width:0) and (max-width:479px) {
+            .main {
+                height: 400vh;
+                grid-template-columns: auto;
+            }
+
+            .box {
+                background-color: rgb(60, 68, 60);
+
+            }
+
+            #box1,
+            #box14 {
+                grid-column: 1/1 span;
+            }
+        }
+
+        /* #box2,#box3,#box9,#box10,#box12{
+            grid-column: 1/2 span;
+        }
+        #box3,#box10{
+            grid-column-start: 3;
+        }
+        #box5{
+            grid-row: 1/2 span;
+            grid-column: 1/2 span;
+            grid-column-start: 2;
+            grid-row-start: 3;
+        }
+        #box12{
+            grid-column-start: 2;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">Box3</div>
+        <div class="box" id="box4">Box4</div>
+        <div class="box" id="box5">Box5</div>
+        <div class="box" id="box6">Box6</div>
+        <div class="box" id="box7">Box7</div>
+        <div class="box" id="box8">Box8</div>
+        <div class="box" id="box9">Box9</div>
+        <div class="box" id="box10">Box10</div>
+        <div class="box" id="box11">Box11</div>
+        <div class="box" id="box12">Box12</div>
+        <div class="box" id="box13">Box13</div>
+        <div class="box" id="box14">Box14</div>
+    </div>
+</body>
+
+</html>

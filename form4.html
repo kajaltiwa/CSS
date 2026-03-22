@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <div>
+            <label>Subject</label>
+            <select name="Subject">
+                <option value="Mern Stack">Mern Stack</option>
+                <option>Mean Stack</option>
+                <option>Mevn Stack</option>
+                <option>Java</option>
+                <option>Python</option>
+                <option>Full Stack Dev</option>
+                <option>Web Dev</option>
+                <option value="PHP">PHP</option>
+                <option>Advance PHP</option>
+                <option>.Net</option>
+                <option>.Net Full Stack</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Technology</label>
+            <input type="text" name="Technology" list="techList" placeholder="Enter Technology Name">
+            <datalist id="techList">
+                <option>Core Java</option>
+                <option>Java</option>
+                <option>Advance Java</option>
+                <option>Java Script</option>
+                <option>Type Script</option>
+                <option>Python</option>
+                <option>Advance Python</option>
+                <option>PHP</option>
+                <option>Mern Stack</option>
+                <option>Mean Stack</option>
+                <option>Meavn Stack</option>
+                <option>.Net</option>
+                <option>Django</option>
+                <option>MongoDB</option>
+                <option>MYSQL</option>
+            </datalist>
+        </div>
+        
+        <div>
+            <label>Image</label>
+            <input type="image" src="p1.jpg" height="66px" width="100px" alt="">
+        </div>
+
+        <div>
+            <label>Pic</label>
+            <input type="file" name="Pic" multiple>
+        </div>
+
+        <div>
+            <label>Massage</label>
+            <textarea name="massage" id="" rows="10" cols="50" placeholder="massage..."></textarea>
+        </div>
+
+        <div>
+            <button>SUBMIT</button>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .center {
+            width: 80%;
+            margin: auto;
+        }
+
+        .center h3 {
+            background-color: rgb(35, 173, 173);
+            color: rgb(65, 12, 117);
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #submit-btn {
+            background-color: rgb(35, 173, 173);
+            color: rgb(65, 12, 117);
+            padding: 10px;
+            width: 100%;
+            border: none;
+        }
+
+        .form-element {
+            width: 100%;
+            display: flex;
+        }
+
+        .item {
+            width: 100%;
+        }
+
+        .item input,
+        textarea {
+            width: 98%;
+            margin-bottom: 10px;
+            padding: 10px 0;
+            border: none;
+            border-bottom: 5px solid rgb(65, 173, 173);
+            border-radius: 10px;
+        }
+
+        .item input:focus,
+        textarea:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="center">
+            <h3>Student Registration Form</h3>
+            <form action="">
+                <div class="form-element">
+                    <div class="item">
+                        <!-- <label>Name*</label> -->
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="item">
+                        <!-- <label>Email*</label> -->
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="item">
+                        <!-- <label>Phone</label> -->
+                        <input type="text" name="phone" placeholder="Phone Number" required>
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="item">
+                        <!-- <label>Address</label> -->
+                        <textarea name="Address" placeholder="address.." id="" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="item">
+                        <!-- <label>Pin</label> -->
+                        <input type="text" name="pin" placeholder="Pin Code" required>
+                    </div>
+                    <div class="item">
+                        <!-- <label>Phone</label> -->
+                        <input type="text" name="Phone" placeholder="Phone Number" required>
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="item">
+                        <!-- <label>City</label> -->
+                        <input type="text" name="city" placeholder="City Name" required>
+                    </div>
+                    <div class="item">
+                        <!-- <label>State</label> -->
+                        <input type="text" name="state" placeholder="State Name" required>
+                    </div>
+                </div>
+
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

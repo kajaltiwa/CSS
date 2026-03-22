@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+         margin: 0;   
+        }
+        .main{
+            width: 100vw;
+        }
+        .row,.row-reverse{
+            width: 100%;
+            display: flex;
+        }
+        .row-reverse{
+            flex-direction: row-reverse;
+        }
+        .first,.second{
+            width: 50%;
+            height: 400px;
+            margin: 10px;
+        }
+        .first img,.second img{
+            height: 90%;
+            width: 90%;
+        }
+        .first h1,.second h1{
+            padding: 10px;
+            text-align: center;
+            font-family: Verdana;
+            font-size: 1.5rem;
+           
+        }
+        .first p,.second p{
+            padding: 10px;
+            text-align: justify;
+            font-size: 1.2rem;
+            font-family: Verdana;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="row">
+            <div class="first">
+              <img src="p1.jpg" alt="">
+            </div>
+            <div class="second">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisiciuptas doloribus</h1>
+                <p>Lorem ipsum dolor Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nihil voluptatibus atque, nobis consequuntur maiores sit illum fugit praesentium assumenda? sit amet consectetur adipisicing elit. Impedit, omnis quo et eos, amet pariatur sed dolore commodi explicabo corporis error quaerat molestias vitae optio. Assumenda tempora voluptates molestiae veritatis.</p>
+            </div>
+        </div>
+
+        <div class="row-reverse">
+            <div class="second">
+               <img src="p2.jpg" height="400px" width="400px"> 
+            </div>
+            <div class="second">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisiciuptas doloribus</h1>
+                <p>Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas quo a tenetur placeat blanditiis nam sapiente quia tempora, ratione quibusdam. sit amet consectetur adipisicing elit. Impedit, omnis quo et eos, amet pariatur sed dolore commodi explicabo corporis error quaerat molestias vitae optio. Assumenda tempora voluptates molestiae veritatis.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="first">
+              <img src="p1.jpg" alt="">
+            </div>
+            <div class="second">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisiciuptas doloribus</h1>
+                <p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias illum tempora saepe quam nam labore quas provident iste commodi. sit amet consectetur adipisicing elit. Impedit, omnis quo et eos, amet pariatur sed dolore commodi explicabo corporis error quaerat molestias vitae optio. Assumenda tempora voluptates molestiae veritatis.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

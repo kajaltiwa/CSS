@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+
+            background-color: aqua;
+            display: flex;
+            /* flex-direction: row; */
+            flex-direction: column-reverse;
+            /* flex-direction: column-reverse;
+            flex-direction: column-reverse; */
+           
+
+            /* align-items: flex-start;
+            align-items: flex-end;
+            align-items: center; */
+            align-items : end;  
+
+            justify-content: flex-start;
+            /* justify-content: flex-end;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly; */
+
+            flex-wrap: nowrap;
+            /* flex-wrap: wrap;
+            flex-wrap: wrap-reverse; */
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+
+            color: antiquewhite;
+            display: grid;
+            place-items: center;
+        }
+        #box1{
+            background-color: blue;
+        }
+        #box2{
+            background-color: rgb(210, 127, 24);
+        }
+        #box3{
+            background-color: rgb(20, 223, 57);
+        }
+        #box4{
+            background-color: rgb(250, 23, 23);
+        }
+        #box5{
+            background-color: rgb(207, 12, 162);
+        }
+        #box6{
+            background-color: rgb(246, 58, 11);
+        }
+        #box7{
+            background-color: rgb(180, 12, 104);
+        }
+        #box8{
+            background-color: rgb(141, 141, 173);
+        }
+        #box9{
+            background-color: rgb(102, 102, 206);
+        }
+        #box10{
+            background-color: rgb(163, 183, 31);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+        <div class="box" id="box5">box5</div>
+        <div class="box" id="box6">box6</div>
+        <div class="box" id="box7">box7</div>
+        <div class="box" id="box8">box8</div>
+        <div class="box" id="box9">box9</div>
+        <div class="box" id="box10">box10</div>
+    </div>
+</body>
+</html>
